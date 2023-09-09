@@ -1,9 +1,9 @@
 {
   "name": "test",
   "description": "test so test test test and also test",
-  "origin": "https://github.com/mirkobrombin/cpak-test",
-  "binaries": ["/usr/bin/test"],
-  "desktop_entries": ["/usr/share/applications/test.desktop"],
+  "origin": "ghcr.io/vanilla-os/pico:main",
+  "binaries": ["/usr/bin/top"],
+  "desktop_entries": [],
   "dependencies": [],
   "future_dependencies": [],
   "idle_time": 0
