@@ -1,0 +1,10 @@
+{
+  "name": "test",
+  "description": "test so test test test and also test",
+  "origin": "https://github.com/mirkobrombin/cpak-test",
+  "binaries": ["/usr/bin/test"],
+  "desktop_entries": ["/usr/share/applications/test.desktop"],
+  "dependencies": [],
+  "future_dependencies": [],
+  "idle_time": 0
+}
