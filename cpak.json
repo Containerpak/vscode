@@ -3,7 +3,7 @@
   "description": "test so test test test and also test",
   "version": "0.0.1",
   "image": "ghcr.io/containerpak/cpak-test:main",
-  "binaries": ["/usr/bin/top"],
+  "binaries": ["/usr/bin/htop"],
   "desktop_entries": [],
   "dependencies": [],
   "future_dependencies": [],
