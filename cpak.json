@@ -2,7 +2,7 @@
   "name": "test",
   "description": "test so test test test and also test",
   "version": "0.0.1",
-  "image": "ghcr.io/mirkobrombin/cpak-test:main",
+  "image": "ghcr.io/containerpak/cpak-test:main",
   "binaries": ["/usr/bin/top"],
   "desktop_entries": [],
   "dependencies": [],
