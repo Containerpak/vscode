@@ -2,7 +2,7 @@
   "name": "test",
   "description": "test so test test test and also test",
   "version": "0.0.1",
-  "origin": "ghcr.io/vanilla-os/pico:main",
+  "image": "ghcr.io/vanilla-os/pico:main",
   "binaries": ["/usr/bin/top"],
   "desktop_entries": [],
   "dependencies": [],
