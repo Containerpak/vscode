@@ -1,11 +1,11 @@
 {
-  "name": "test",
-  "description": "test so test test test and also test",
-  "version": "0.0.1",
+  "name": "Steam",
+  "description": "Steam is the ultimate destination for playing, discussing, and creating games.",
+  "version": "1.0.0.78",
   "image": "ghcr.io/containerpak/cpak-test:main",
-  "binaries": ["/usr/bin/htop"],
-  "desktop_entries": [],
-  "dependencies": ["cpak-test-dep"],
+  "binaries": ["/usr/bin/steam"],
+  "desktop_entries": ["/usr/share/applications/steam.desktop],
+  "dependencies": [],
   "future_dependencies": [],
   "idle_time": 0
 }
