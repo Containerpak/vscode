@@ -4,7 +4,7 @@
   "version": "1.0.0.78",
   "image": "ghcr.io/containerpak/cpak-test:main",
   "binaries": ["/usr/bin/steam"],
-  "desktop_entries": ["/usr/share/applications/steam.desktop],
+  "desktop_entries": ["/usr/share/applications/steam.desktop"],
   "dependencies": [],
   "future_dependencies": [],
   "idle_time": 0
