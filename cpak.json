@@ -2,7 +2,7 @@
   "name": "Steam",
   "description": "Steam is the ultimate destination for playing, discussing, and creating games.",
   "version": "1.0.0.78",
-  "image": "ghcr.io/containerpak/cpak-test:main",
+  "image": "ghcr.io/containerpak/steam:main",
   "binaries": ["/usr/bin/steam"],
   "desktop_entries": ["/usr/share/applications/steam.desktop"],
   "dependencies": [],
