@@ -28,6 +28,6 @@
     "env": [],
     "network": true,
     "process": false,
-    "asRoot": false,
+    "asRoot": false
   }
 }
