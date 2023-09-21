@@ -7,5 +7,27 @@
   "desktop_entries": ["/usr/share/applications/steam.desktop"],
   "dependencies": [],
   "future_dependencies": [],
-  "idle_time": 0
+  "idle_time": 0,
+  "override": {
+    "socketX11": true,
+    "socketWayland": true,
+    "socketPulseAudio": true,
+    "socketSessionBus": true,
+    "socketSystemBus": false,
+    "socketSshAgent": false,
+    "socketCups": false,
+    "socketGpgAgent": false,
+    "deviceDri": false,
+    "deviceKvm": false,
+    "deviceShm": false,
+    "deviceAll": true,
+    "fsHost": false,
+    "fsHostEtc": false,
+    "fsHostHome": true,
+    "fsExtra": [],
+    "env": [],
+    "network": true,
+    "process": false,
+    "asRoot": false,
+  }
 }
