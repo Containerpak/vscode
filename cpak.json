@@ -4,7 +4,8 @@
   "version": "1.82.2",
   "image": "ghcr.io/containerpak/vscode:main",
   "binaries": [
-    "/usr/share/code/bin/code"
+    "/usr/share/code/bin/code",
+    "/usr/share/code/bin/git"
   ],
   "desktop_entries": [
     "/usr/share/applications/code.desktop",
