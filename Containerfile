@@ -1,9 +1,9 @@
 FROM ghcr.io/containerpak/mesa:main
 ARG DEBIAN_FRONTEND=noninteractive
 RUN apt update && \
-    apt install -y curl gnupg2 && \
-    curl -sS https://download.spotify.com/debian/pubkey_7A3A762FAFD4A51F.gpg | gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg && \
-    echo "deb http://repository.spotify.com stable non-free" | tee /etc/apt/sources.list.d/spotify.list && \
-    apt update && \
-    apt install -y spotify-client && \
+    apt install -y wget && \
+    wget -O code.deb https://packages.microsoft.com/repos/code/pool/main/c/code/code_1.82.2-1694671812_amd64.deb && \
+    dpkg -i code.deb || true && \
+    apt install -f -y && \
+    rm -f code.deb && \
     /usr/bin/cpak-clean-junk

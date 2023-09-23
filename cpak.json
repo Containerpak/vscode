@@ -1,13 +1,14 @@
 {
-  "name": "Spotify",
-  "description": "Online music streaming service",
-  "version": "1.2.13.661",
-  "image": "ghcr.io/containerpak/spotify:main",
+  "name": "Visual Studio Code",
+  "description": "Code editing. Redefined.",
+  "version": "1.82.2",
+  "image": "ghcr.io/containerpak/vscode:main",
   "binaries": [
-    "/usr/bin/spotify"
+    "/usr/share/code/bin/code"
   ],
   "desktop_entries": [
-    "/usr/share/spotify/spotify.desktop"
+    "/usr/share/applications/code.desktop",
+    "/usr/share/applications/code-url-handler.desktop"
   ],
   "dependencies": [],
   "future_dependencies": [],
@@ -17,21 +18,21 @@
     "socketWayland": true,
     "socketPulseAudio": true,
     "socketSessionBus": true,
-    "socketSystemBus": false,
-    "socketSshAgent": false,
+    "socketSystemBus": true,
+    "socketSshAgent": true,
     "socketCups": false,
-    "socketGpgAgent": false,
+    "socketGpgAgent": true,
     "deviceDri": false,
     "deviceKvm": false,
     "deviceShm": false,
     "deviceAll": true,
-    "fsHost": false,
+    "fsHost": true,
     "fsHostEtc": false,
-    "fsHostHome": false,
+    "fsHostHome": true,
     "fsExtra": [],
     "env": [],
     "network": true,
-    "process": false,
+    "process": true,
     "asRoot": false
   }
 }
