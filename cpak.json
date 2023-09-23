@@ -1,10 +1,14 @@
 {
-  "name": "Steam",
-  "description": "Steam is the ultimate destination for playing, discussing, and creating games.",
-  "version": "1.0.0.78",
-  "image": "ghcr.io/containerpak/steam:main",
-  "binaries": ["/usr/bin/steam"],
-  "desktop_entries": ["/usr/share/applications/steam.desktop"],
+  "name": "Spotify",
+  "description": "Online music streaming service",
+  "version": "1.2.13.661",
+  "image": "ghcr.io/containerpak/spotify:main",
+  "binaries": [
+    "/usr/bin/spotify"
+  ],
+  "desktop_entries": [
+    "/usr/share/spotify/spotify.desktop"
+  ],
   "dependencies": [],
   "future_dependencies": [],
   "idle_time": 0,
@@ -23,7 +27,7 @@
     "deviceAll": true,
     "fsHost": false,
     "fsHostEtc": false,
-    "fsHostHome": true,
+    "fsHostHome": false,
     "fsExtra": [],
     "env": [],
     "network": true,
