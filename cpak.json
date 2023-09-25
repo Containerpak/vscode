@@ -10,9 +10,7 @@
     "/usr/share/applications/code.desktop",
     "/usr/share/applications/code-url-handler.desktop"
   ],
-  "dependencies": [
-    "github.com/containerpak/devtools"
-  ],
+  "dependencies": [ ],
   "future_dependencies": [
     "github.com/containerpak/sdk-go",
     "github.com/containerpak/sdk-python"
