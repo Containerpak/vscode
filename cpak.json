@@ -4,18 +4,18 @@
   "version": "1.82.2",
   "image": "ghcr.io/containerpak/vscode:main",
   "binaries": [
-    "/usr/share/code/bin/code",
+    "/usr/share/code/bin/code"
   ],
   "desktop_entries": [
     "/usr/share/applications/code.desktop",
     "/usr/share/applications/code-url-handler.desktop"
   ],
   "dependencies": [
-    "github.com/containerpak/devtools",
+    "github.com/containerpak/devtools"
   ],
   "future_dependencies": [
     "github.com/containerpak/sdk-go",
-    "github.com/containerpak/sdk-python",
+    "github.com/containerpak/sdk-python"
   ],
   "idle_time": 0,
   "override": {
