@@ -10,8 +10,13 @@
     "/usr/share/applications/code.desktop",
     "/usr/share/applications/code-url-handler.desktop"
   ],
-  "dependencies": [],
-  "future_dependencies": [],
+  "dependencies": [
+    "github.com/containerpak/devtools",
+  ],
+  "future_dependencies": [
+    "github.com/containerpak/sdk-go",
+    "github.com/containerpak/sdk-python",
+  ],
   "idle_time": 0,
   "override": {
     "socketX11": true,
