@@ -10,7 +10,7 @@
     "/usr/share/applications/code.desktop",
     "/usr/share/applications/code-url-handler.desktop"
   ],
-  "dependencies": [ ],
+  "dependencies": [],
   "addons": [
     "github.com/containerpak/sdk-go",
     "github.com/containerpak/sdk-python"
@@ -29,7 +29,7 @@
     "deviceKvm": false,
     "deviceShm": false,
     "deviceAll": true,
-    "fsHost": true,
+    "fsHost": false,
     "fsHostEtc": false,
     "fsHostHome": true,
     "fsExtra": [],
