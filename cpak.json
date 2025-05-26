@@ -12,8 +12,7 @@
   ],
   "dependencies": [],
   "addons": [
-    "github.com/containerpak/sdk-go",
-    "github.com/containerpak/sdk-python"
+    "github.com/containerpak/sdk-*"
   ],
   "idle_time": 0,
   "override": {
