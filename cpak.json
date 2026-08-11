@@ -1,7 +1,8 @@
 {
+  "manifest_version": "1.0",
   "name": "Visual Studio Code",
   "description": "Code editing. Redefined.",
-  "version": "1.82.2",
+  "version": "1.132.0-1785860022",
   "image": "ghcr.io/containerpak/vscode:main",
   "binaries": [
     "/usr/share/code/bin/code"
@@ -11,30 +12,38 @@
     "/usr/share/applications/code-url-handler.desktop"
   ],
   "dependencies": [],
-  "addons": [
-    "github.com/containerpak/sdk-*"
-  ],
+  "addons": [],
   "idle_time": 0,
   "override": {
     "socketX11": true,
     "socketWayland": true,
     "socketPulseAudio": true,
     "socketSessionBus": true,
-    "socketSystemBus": true,
+    "socketSystemBus": false,
     "socketSshAgent": true,
     "socketCups": false,
     "socketGpgAgent": true,
-    "deviceDri": false,
+    "deviceDri": true,
     "deviceKvm": false,
     "deviceShm": false,
-    "deviceAll": true,
+    "deviceAll": false,
     "fsHost": false,
     "fsHostEtc": false,
     "fsHostHome": true,
     "fsExtra": [],
     "env": [],
     "network": true,
-    "process": true,
-    "asRoot": false
-  }
+    "process": false,
+    "asRoot": false,
+    "allowedHostCommands": []
+  },
+  "runtime_sources": [
+    {
+      "name": "code_1.132.0-1785860022_amd64.deb",
+      "url": "https://update.code.visualstudio.com/latest/linux-deb-x64/stable",
+      "sha256": "8e29828de8d91eb8291d37b6575eb3f4fc960744ba8e7409a32dd86c34ad0075",
+      "size": 168255488,
+      "installer": "dpkg"
+    }
+  ]
 }
