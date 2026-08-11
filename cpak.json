@@ -1,4 +1,5 @@
 {
+  "$schema": "https://raw.githubusercontent.com/Containerpak/cpak/v2/schema/manifest-v2.json",
   "manifest_version": "2.0",
   "name": "Visual Studio Code",
   "description": "Code editing. Redefined.",
@@ -26,26 +27,30 @@
     "socketSshAgent": true,
     "socketCups": false,
     "socketGpgAgent": true,
+    "socketAtSpiBus": true,
+    "socketBluetooth": false,
     "deviceDri": true,
     "deviceKvm": false,
-    "deviceShm": false,
+    "deviceShm": true,
+    "deviceAlsa": false,
+    "deviceVideo": false,
+    "deviceFuse": false,
+    "deviceTun": false,
+    "deviceUsb": false,
     "deviceAll": false,
+    "notification": true,
+    "openURI": true,
     "filesystem": [
       {"path": "home", "access": "read-write"}
     ],
     "env": [],
     "network": true,
     "process": false,
+    "userNamespaces": true,
+    "memoryMaxMB": 0,
+    "cpuQuota": 0,
+    "pidsMax": 0,
     "asRoot": false,
-    "allowedHostCommands": ["xdg-open"]
-  },
-  "runtime_sources": [
-    {
-      "name": "code_1.132.0-1785860022_amd64.deb",
-      "url": "https://update.code.visualstudio.com/1.132.0/linux-deb-x64/stable",
-      "sha256": "b73e01a1a371eb7d57f2c01712c43e9cedd15d6bad9a44261c4473db946532ef",
-      "size": 242586130,
-      "installer": "dpkg"
-    }
-  ]
+    "allowedHostCommands": []
+  }
 }

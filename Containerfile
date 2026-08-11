@@ -1,11 +1,23 @@
+FROM ubuntu:26.04 AS code-source
+
+ARG CODE_SHA256=b73e01a1a371eb7d57f2c01712c43e9cedd15d6bad9a44261c4473db946532ef
+
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends ca-certificates curl && \
+    curl --fail --location --output /tmp/code.deb \
+      https://update.code.visualstudio.com/1.132.0/linux-deb-x64/stable && \
+    echo "${CODE_SHA256}  /tmp/code.deb" | sha256sum --check -
+
 FROM ghcr.io/containerpak/gtk:main
 
-ARG DEBIAN_FRONTEND=noninteractive
+LABEL org.opencontainers.image.source="https://github.com/Containerpak/vscode"
 
-RUN apt update && \
-    apt install -y --no-install-recommends \
-    ca-certificates dpkg gpg libasound2t64 libatk-bridge2.0-0 libatk1.0-0 libatspi2.0-0 \
-    libcups2 libcurl4 libdbus-1-3 libgbm1 libgtk-3-0 libnspr4 libnss3 libx11-6 \
-    libxcb1 libxcomposite1 libxdamage1 libxext6 libxfixes3 libxkbcommon0 libxkbfile1 \
-    libxrandr2 xdg-utils && \
+COPY --from=code-source /tmp/code.deb /tmp/code.deb
+
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends /tmp/code.deb && \
+    rm /tmp/code.deb && \
+    mv /usr/share/code/code /usr/share/code/code.real && \
+    printf '%s\n' '#!/bin/sh' 'exec /usr/share/code/code.real --disable-setuid-sandbox "$@"' > /usr/share/code/code && \
+    chmod 755 /usr/share/code/code && \
     cpak-clean-junk
