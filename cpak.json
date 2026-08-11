@@ -1,5 +1,5 @@
 {
-  "manifest_version": "1.0",
+  "manifest_version": "2.0",
   "name": "Visual Studio Code",
   "description": "Code editing. Redefined.",
   "version": "1.132.0-1785860022",
@@ -35,7 +35,7 @@
     "network": true,
     "process": false,
     "asRoot": false,
-    "allowedHostCommands": []
+    "allowedHostCommands": ["xdg-open"]
   },
   "runtime_sources": [
     {
