@@ -43,9 +43,9 @@
   "runtime_sources": [
     {
       "name": "code_1.132.0-1785860022_amd64.deb",
-      "url": "https://update.code.visualstudio.com/latest/linux-deb-x64/stable",
-      "sha256": "8e29828de8d91eb8291d37b6575eb3f4fc960744ba8e7409a32dd86c34ad0075",
-      "size": 168255488,
+      "url": "https://update.code.visualstudio.com/1.132.0/linux-deb-x64/stable",
+      "sha256": "b73e01a1a371eb7d57f2c01712c43e9cedd15d6bad9a44261c4473db946532ef",
+      "size": 242586130,
       "installer": "dpkg"
     }
   ]
