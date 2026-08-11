@@ -17,7 +17,5 @@ COPY --from=code-source /tmp/code.deb /tmp/code.deb
 RUN apt-get update && \
     apt-get install -y --no-install-recommends /tmp/code.deb && \
     rm /tmp/code.deb && \
-    mv /usr/share/code/code /usr/share/code/code.real && \
-    printf '%s\n' '#!/bin/sh' 'exec /usr/share/code/code.real --disable-setuid-sandbox "$@"' > /usr/share/code/code && \
-    chmod 755 /usr/share/code/code && \
+    rm -f /usr/share/code/chrome-sandbox && \
     cpak-clean-junk
