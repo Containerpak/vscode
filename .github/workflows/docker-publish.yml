@@ -54,6 +54,9 @@ jobs:
           provenance: mode=max
           sbom: true
 
+      - name: Verify adapter
+        run: docker run --rm ghcr.io/containerpak/vscode:main sh -c 'test -x /usr/local/bin/code && test ! -e /usr/share/code/bin/code && test -f /usr/share/applications/code.cpak.desktop && test -f /usr/share/applications/code-url-handler.cpak.desktop'
+
       - name: Publish summary
         run: echo "ghcr.io/containerpak/vscode@${{ steps.build.outputs.digest }}" >> "$GITHUB_STEP_SUMMARY"
 

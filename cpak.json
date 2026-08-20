@@ -5,12 +5,22 @@
   "description": "Code editing. Redefined.",
   "version": "1.132.0-1785860022",
   "image": "ghcr.io/containerpak/vscode:main",
+  "runtime_sources": [
+    {
+      "name": "code_1.132.0_amd64.deb",
+      "url": "https://update.code.visualstudio.com/1.132.0/linux-deb-x64/stable",
+      "sha256": "b73e01a1a371eb7d57f2c01712c43e9cedd15d6bad9a44261c4473db946532ef",
+      "size": 242586130,
+      "installer": "deb-extract",
+      "architecture": "amd64"
+    }
+  ],
   "binaries": [
-    "/usr/share/code/bin/code"
+    "/usr/local/bin/code"
   ],
   "desktop_entries": [
-    "/usr/share/applications/code.desktop",
-    "/usr/share/applications/code-url-handler.desktop"
+    "/usr/share/applications/code.cpak.desktop",
+    "/usr/share/applications/code-url-handler.cpak.desktop"
   ],
   "dependencies": [],
   "addons": [
