@@ -65,6 +65,13 @@
     "notification": true,
     "openURI": true,
     "hostApplications": false,
+    "filePicker": {
+      "openFile": true,
+      "openFolder": true,
+      "saveFile": true,
+      "persistent": true,
+      "containingFolder": true
+    },
     "filesystem": [
       {
         "path": "home",
