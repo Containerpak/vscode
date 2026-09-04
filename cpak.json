@@ -3,14 +3,14 @@
   "manifest_version": "3.0",
   "name": "Visual Studio Code",
   "description": "Code editing. Redefined.",
-  "version": "1.136.0-1788342447",
+  "version": "1.136.1-1788413865",
   "image": "ghcr.io/containerpak/vscode@sha256:c8b9abebef720cf2a1a586ae01129813fd13c0c185e07022aafa7c2ab2119560",
   "runtime_sources": [
     {
-      "name": "code_1.136.0-1788342447_amd64.deb",
-      "url": "https://vscode.download.prss.microsoft.com/dbazure/download/stable/520fb30b2d3d324b4cb2342f6e88e2cd93751de1/code_1.136.0-1788342447_amd64.deb",
-      "sha256": "7cc48f2cd51640c7c098740fa3f566dcbdbe5b47e91e86aaecec9d109e3631d3",
-      "size": 243744838,
+      "name": "code_1.136.1-1788413865_amd64.deb",
+      "url": "https://vscode.download.prss.microsoft.com/dbazure/download/stable/a44adf7f53e00964ab890f9f8758a334f1fc15bc/code_1.136.1-1788413865_amd64.deb",
+      "sha256": "4463c4e249a19d7746603f2ec3745c345d3cd55b009d36e824158d15c35509ef",
+      "size": 243690526,
       "installer": "deb-extract",
       "architecture": "amd64"
     }
