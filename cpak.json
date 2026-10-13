@@ -4,7 +4,7 @@
   "name": "Visual Studio Code",
   "description": "Code editing. Redefined.",
   "version": "1.137.0-1788902055",
-  "image": "ghcr.io/containerpak/vscode@sha256:78a97207b2af870734d2cc9645c3c3042ee1d9f3906b1e682820aa2c32f00afd",
+  "image": "ghcr.io/containerpak/vscode@sha256:ab17f0eeb6c3116cb906893daa36b89f1b07271e59f8bbd8f38f46c56de9d76a",
   "runtime_sources": [
     {
       "name": "code_1.137.0-1788902055_amd64.deb",
